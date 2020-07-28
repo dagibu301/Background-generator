@@ -10,6 +10,12 @@ This project was developed using this technologies:
 
 This is a simple gradient background generator
 
+## :star: Live Preview :star:
+
+Go to: [Background-generator](https://dagibu301.github.io/Background-generator/)
+
+
+
 ---
 
 Done with :purple_heart: by David Giraldo :wave:
