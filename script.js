@@ -21,9 +21,9 @@ setGradient = ( ) => {
 
 generateRandomColors = ()=> {
 	let color1 = (Math.random() * 0xfffff * 1000000).toString(16);
-	color1 = '#' + color1.slice(0, 6);
+	color1 =  `#${color1.slice(0, 6)}`;
 	let color2 = (Math.random() * 0xfffff * 1000000).toString(16);
-	color2 = '#' + color2.slice(0, 6);
+	color2 = `#${color2.slice(0, 6)}`;
 	setGradientStyle(color1, color2); 
 	colorInput1.value = color1;
 	colorInput2.value = color2;
