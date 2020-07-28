@@ -37,7 +37,7 @@ h3 {
     padding-top: 1rem;
     width: 75vw;
     height: 75vh;
-    background: linear-gradient(to right, #5b78cd ,#979595 ); /* Standard syntax */
+    background: linear-gradient(to right, #2DF8CA,#DD57DD ); /* Standard syntax */
     border-radius: 15px;
     box-shadow: 10px 10px 5px #aaaaaa;
 }
