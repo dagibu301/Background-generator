@@ -4,15 +4,19 @@ const color2 = document.querySelector(".color2");
 const body = document.getElementById("gradient");
 const button = document.querySelector(".myButton");
 
-setGradient = ()=> {
+setGradientStyle = (col1 , col2)=> { 
 	body.style.background = 
 	"linear-gradient(to right, " 
-	+ color1.value 
+	+ col1 
 	+ ", " 
-	+ color2.value 
+	+ col2 
 	+ ")";
 
 	css.textContent = body.style.background + ";";
+}
+
+setGradient = ( ) => {
+	setGradientStyle(color1.value, color2.value); 
 }
 
 generateRandomColors = ()=> {
@@ -20,14 +24,7 @@ generateRandomColors = ()=> {
 	color1 = '#' + color1.slice(0, 6);
 	let color2 = (Math.random() * 0xfffff * 1000000).toString(16);
 	color2 = '#' + color2.slice(0, 6);
-	body.style.background = 
-	"linear-gradient(to right, " 
-	+ color1 
-	+ ", " 
-	+ color2 
-	+ ")";
-
-	css.textContent = body.style.background + ";";
+	setGradientStyle(color1, color2); 
 }
 
 color1.addEventListener("input", setGradient);
